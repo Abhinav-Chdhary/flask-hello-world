@@ -10,6 +10,11 @@ CORS(app)
 # Members API Route
 
 
+@app.route("/")
+def helloWorld():
+    return "Fuck you"
+
+
 @app.route("/members")
 def members():
     return {"members": ["mem1", "mem2", "mem3"]}
